@@ -44,29 +44,387 @@ body {
     padding-right: 56px;
 }
 .shopping-cart{
-    padding-left: 10%;
+    padding-left: 8%;
 }
 
 .main-menu {
     display: flex;
     align-items: center;
 }
-}.navbar > .main-menu > .right2 > h1, p {
+
+.navbar > .main-menu > .right2 > h1, p {
     color: black;
 }
+
 .right2 > p {
     color: black;
 }
+
 .right2 {
     padding-left: 5%;
     display: flex;
-        align-items: center;
+    align-items: center;
 }
+
 .title {
     padding-right: 15%;
 }
 
 input {
-    height: 34px;
+    height: 40px;
     width: 317px;
+}
+
+.search-icon {
+    display: flex;
+    align-items: center;
+    width: 51;
+    height: 40px;
+    background-color: #FB2E86;
+}
+
+.banner > .lamp {
+    position: absolute;
+    width: 387px;
+    height: 387px;
+    left: 70px;
+    top: 122px;
+    background-image: url("img\bell.png");
+}
+
+.banner > .letters {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.header-words {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 644px;
+    height: 248px;
+    top: 203px;
+    left: 375px;
+}
+
+.header-words > .text1 {
+    font-size: 16px;
+    text-decoration-color: #FB2E86;
+    width: 230px;
+    height: 28px;
+}
+
+.text1 > p {
+    color: #000000;
+}
+
+.text2 > p {
+    color:  #8A8FB9;
+}
+
+.text3 > p {
+    color: #8A8FB9;
+}
+
+.header-words > .text2 {
+    margin-top: 12px;
+    font-size: 53px;
+    font-weight: bolder;
+    width: 644px;
+    height: 140px;
+}
+
+.text3 {
+    margin-top: 24px;
+    font-size: 16px;
+    width: 559px;
+    height: 56px;
+}
+
+.banner-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 163px;
+    height: 50px;
+    background-color: #FB2E86;
+    border-radius: 5px;
+    margin-top: 505px;
+    margin-left: 375px;
+    border-color: #FB2E86;
+}
+
+.banner-btn > p {
+    color: white;
+    font-size: 16px;
+}
+
+.banner > .sofa-promo {
+    width: 706px;
+    height: 686px;
+    left: 1051px;
+    margin-left: auto;
+    background-image: url("img\sofa promotional header.png");
+}
+
+/* --------- Banner section Styles end here -------*/
+
+/* -------- Featured product styles begin here -----*/
+
+.featured-pdt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+}
+
+.section-header {
+    color: #1a0b5b;
+    font-size: 42px;
+}
+
+.products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;    
+}
+
+.products > .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 361px;
+}
+
+.product > .product-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 270px;
+    height: 361px;
+    object-fit: contain;
+}
+
+.product-img > .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 100%;
+    visibility: hidden;
+}
+
+.icon-hov:hover {
+    background-color: #117f53;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+.img-btn {
+    display: flex;
+    width: 94px;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    visibility: hidden;
+    margin-left: 95px;
+    background-color: #08d15f;
+}
+
+.product > .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 125px;
+}
+
+.details > .product-name > p {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FB2E86;
+    margin-top: 20px;
+}
+
+.details > .silder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 4px;
+    background-color: #f2f0ff;
+}
+
+.slider > .slide1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 4px;
+    background-color: #05e6b7;
+}
+
+.slider > .slider2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 4px;
+    background-color: #f701a8;
+    margin-left: 5px;
+}
+
+.code > p {
+    font-size: 14px;
+    line-height: 16px;
+    columns: #151875;
+    margin-left: 4px;
+}
+
+.product:hover .icons,
+.product:hover .img-btn {
+    visibility: visible;
+}
+
+.product .details {
+    background-color: #151875;
+}
+
+.product:hover .product-name > p,
+.product:hover .code > p {
+    color: white;
+} 
+
+.featured-pdt > .section-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 91px;
+    height: 4px;
+    margin-top: 53px;
+}
+
+.section-slider > .slide1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 4px;
+    background-color: #fb2e86;
+}
+
+.section-slider > .slide2,
+.section-slider > .slide3,
+.section-slider > .slide4 {
+    background-color: #febad7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    width: 16px;
+    height: 4px;
+}
+
+/* ---------Featured product styles end here ----*/
+
+/* ---------Latest Product styles begin here ----*/
+
+.section-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 527px;
+    height: 22px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav > p {
+    color: #151875;
+    font-size: 18px;
+}
+
+.nav:hover > p {
+    color: #fb2e86;
+}
+
+.products2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.code-red > p {
+    font-size: 12px;
+    color: #fb2448;
+    text-decoration: line-through;
+}
+
+.product2 {
+    display: flex;
+    flex-direction: column;
+    width: 365px;
+    height: 306px;
+    margin: 10px 10px 10px 10px;    
+}
+
+.product-img2 {
+    display: flex;
+    justify-content: center;
+    width: 360px;
+    height: 270px;
+}
+
+.icons2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.image2 {
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 260px;
+}
+
+.icons2 > .icon-hov {
+    margin-bottom: 5px;
+}
+
+.product2:hover .icons2 {
+    visibility: visible;
+    cursor: pointer;
+}
+
+.details2 {
+    display: flex;
+    align-items: center;
+    width: 85px;
+}
+
+.det-right {
+    display: flex;
+    align-items: center;
+    width: 85px;
 }
